@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* PRODUCT */
+
+.product {
+  border: 4px solid black;
+  width: 52%;
+  margin: 3% auto;
+}
+
+.product-title {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f3f3f3;
+  font-size: 115%;
+  font-weight: bold;
+  padding: 1.5% 0;
+}
+
+.product-photo {
+  border: 4px #bbbbbb solid;
+  border-left: none;
+  width: 30%;
+  height: auto;
+}
+
+/* PRODUCT INFORMATION */
+
+.price {
+  font-size: 130%;
+}
+
+.shipping {
+  color: #979797;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.colorful-squares div {
+  display: inline-block;
+  /* background-color: #f00; */
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.colorful-squares div:nth-child(1) {
+  background-color: #000;
+}
+
+.colorful-squares div:nth-child(2) {
+  background-color: #00f;
+}
+
+.colorful-squares div:nth-child(3) {
+  background-color: #f00;
+}
+
+.colorful-squares div:nth-child(4) {
+  background-color: #ff0;
+}
+
+.colorful-squares div:nth-child(5) {
+  background-color: #008000;
+}
+
+.colorful-squares div:nth-child(6) {
+  background-color: #a52a2a;
+}
+
+/* BUTTONS */
+
+.add-cart {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: none;
+  padding: 15px;
+  width: 100%;
+  border-top: 4px solid #000;
+}
+
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* SALE TAG */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  position: absolute;
+  content: "SALE";
+  display: inline-block;
+  background-color: #f00;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  top: -15px;
+  left: -25px;
+  padding: 5px 10px;
+}
