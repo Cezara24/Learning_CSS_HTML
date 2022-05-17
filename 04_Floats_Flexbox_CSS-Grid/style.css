@@ -27,7 +27,6 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
   /* height: 80px; */
 }
 
@@ -345,7 +344,9 @@ footer {
   font-style: italic; */
 }
 
-.row {
+/* FLEXBOX LAYOUT */
+
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -357,6 +358,41 @@ article {
 }
 
 aside {
-  /* grow shrink basis */
+  grow shrink basis
   flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: repeat(3, auto);
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+article {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+aside {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
 }
